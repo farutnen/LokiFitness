@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP1 Nahuel Farut -- comisión B Turno Noche -- </title>
+
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="encabezado">
+        <div class="container">
+            <!-- small navbar visto solo hasta 767px-->
+            <div class="navbar-sm">
+                <div>
+                    <!-- aplique flexbox -->
+                    <a href="#">
+                        <img class="logo-loki" src="img/logos/loki-fitness1.png" width="80px" height="80px" alt="logo-loki">
+                    </a>
+                    <!-- actúa target -->
+                    <h1>
+                        <a class="icono-h" href="#mi-menu">
+                            <i class="fas fa-bars fa-1x"></i>
+                        </a>
+                    </h1>
+                </div>
+                <nav id="mi-menu">
+                    <ul>
+                        <li><a href="index.html">inicio</a></li>
+                        <li><a href="#pastillas-filosofía">Glorioso Propósito</a></li>
+                        <li><a href="#quienes-somos">Sobre Nosotros</a></li>
+                        <li><a href="#">video destacado</a></li>
+                        <li><a href="#">galerías</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- medium navbar 768px reaparece -->
+            <div class="navbar-md">
+                <img class="logo-loki" src="img/logos/loki-fitness2.png" width="80px" alt="logo-loki">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">inicio</a></li>
+                        <li><a href="#pastillas-filosofía">filosofía</a></li>
+                        <li><a href="#quienes-somos">Sobre Nosotros</a></li>
+                        <li><a href="#">Video destacado</a></li>
+                        <li><a href="#">galerías</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="container-barra">
+    </div>
+    <div class="container-banner">
+        <figure class="banner">
+            <img src="img/Banner-1920x720.jpg" alt="Banner-1920x720" class="img-fluid" width="1920" height="720">
+        </figure>
+        <figure class="banner-loki">
+            <img src="img/logos/loki-fitness2.png" alt="Banner-loki-fitness2" class="img-fluid" width="320" height="594">
+        </figure>
+    </div>
+
+    <!-- fin banner -->
+    <!-- informa lo mas importante-->
+    <main>
+        <div class="container">
+            <header class="bienvenido">
+                <h1>Bienvenidos a Loki fitness</h1>
+            </header>
+        </div>
+        <div class="encabezado-pastilla">
+            <h1>Conceptos base para lograr <strong>el glorioso propósito</strong></h2>
+        </div>
+        <section id="pastillas-filo">
+            <div class="titulo-pastilla">
+                <h1>Conceptos base para lograr <strong>el glorioso propósito</strong></h2>
+            </div>
+
+
+            <article class="alimentacion">
+                <figure class="figure">
+                    <picture>
+                        <img src="img/iconos/salad.png" alt="ensalada" width="150" height="150" title="ensalada" class="img-fluid">
+                    </picture>
+                </figure>
+                <div>
+                    <h2 class="h2">Alimentación</h2>
+                    <p class="p">En nuestro local disponemos de un Salad bar para que puedas pedirte una variedad de alimentos para mantenerte sano, sentirte bien y tener energía. Estos nutrientes incluyen las proteínas, los carbohidratos, las grasas, el agua, las
+                        vitaminas y los minerales necesarios para tus necesidades.</p>
+                </div>
+            </article>
+            <article class="ejercicios">
+                <figure class="figure">
+                    <picture>
+                        <img src="img/iconos/gym.png" alt="24hs" width="150" height="150" title="24hs" class="img-fluid">
+                    </picture>
+                </figure>
+                <div>
+                    <h2 class="h2">Ejercicios a las 24hs.</h2>
+                    <p class="p">Nosotros disponemos del local abierto las 24Hs. para cuando tengas ganas de quemar calorías, lo puedas hacer a cualquier hora. Los ejercicios disponibles de 00Hs. a 06Hs. son el peso muerto, el press de banca, el press de hombros y
+                        la tracción.</p>
+                </div>
+            </article>
+            <article class="muscle">
+                <figure class="figure">
+                    <picture>
+                        <img src="img/iconos/muscle.png" alt="papelera" width="150" height="150" title="papelera" class="img-fluid">
+                    </picture>
+                </figure>
+                <div>
+                    <h2 class="h2">Perseverancia</h2>
+                    <p class="p">En Loki Fitness te ayudamos a tener firmeza, constancia y consistencia ante el cuerpo ideal. Nusotros hacemos del ejercicio una prioridad. Planeamos por vos una rutina de ejercicio, anotándola en tu agenda asignada y poniéndote recordatorios
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section id="quienes-somos">
+
+            <article class="parr-img1">
+                <!-- padre de  5 tags-->
+                <div class="container parrafo1">
+
+                    <h3>Bienvenido, Midgardiano!</h3>
+                    <p>En loki Fitness nos une un objetivo: <strong>lograr nuestro glorioso propósito!</strong> Acá no toleramos que nos traten como corderitos sometidos, nosotros somos <strong>DIOSES</strong> de la musculatura!
+                    </p>
+                </div>
+                <figure>
+                    <picture>
+                        <img src="img/Movil-img1-425x425.jpg" alt="Ejercicio1" width="425" height="425" class="img-fluid ej1">
+                    </picture>
+                    <figcaption>ejercicio 1</figcaption>
+                </figure>
+            </article>
+            </div>
+            <article class="parr-img2">
+                <div class="container parrafo2">
+                    <h2>Acá no somos variantes, no...</h2>
+                    <p>Nos ponemos en forma desafiando a la verdad, no importa si sos flaco, gordo (como fat Thor), alto como un gigante de hielo o bajito como un enano de Nidavellir, acá somos todos iguales.
+                    </p>
+                </div>
+                <figure>
+                    <picture>
+                        <figure>
+                            <img src="img/Movil-img2-425x425.jpg" alt="Ejercicio2" width="425" height="425" class="img-fluid ej2">
+                    </picture>
+                    <figcaption>ejercicio2</figcaption>
+                    </figure>
+            </article>
+            </div>
+            <article class="parr-img3">
+                <div class="container parrafo3">
+                    <p>Nosotros no descansamos hasta lograr por nuestro propio mérito la figura escultural que uno desea, y no porque tenía que pasar de ese modo (o porque la autoridad de variación temporal dejaron que pasara). Nuestras deciciones son...
+                        <strong>Nuestras!</strong>
+                    </p>
+                </div>
+                <figure>
+                    <picture>
+                        <img src="img/Movil-img3-425x425.jpg" alt="Ejercicio3" width="425" height="425" class="img-fluid ej3">
+                    </picture>
+                    <figcaption>ejercicio 3</figcaption>
+                </figure>
+            </article>
+            </div>
+            <article class="parr-img4">
+                <div class="container parrafo4">
+                    <p>No hay oportunidad para el fracaso. perdemos a veces, si... dolorosamente también, pero nunca dejamos que muera nuestra voluntad de poder!
+                    </p>
+                </div>
+                <figure>
+                    <picture>
+                        <img src="img/Movil-img4-425x425.jpg" alt="Ejercicio4" width="425" height="425" class="img-fluid ej4">
+                    </picture>
+                    <figcaption>ejercicio 4</figcaption>
+                </figure>
+            </article>
+            </div>
+            <article class="parr-img5">
+                <div class="container parrafo5">
+                    <p>No hay oportunidad para el fracaso. perdemos a veces, si... dolorosamente también, pero nunca dejamos que muera nuestra voluntad de poder!Así que dejen de estar de rodillas como simples Midgardianos! levántesen, vengan a Loki Fitness
+                        para estar en buena forma como todo Asgardiano, y darle una paliza a cualquier Hulk que los quiera azotar contra el piso como si fuera un trapo!
+                    </p>
+                </div>
+                <figure>
+                    <picture>
+                        <img src="img/Movil-img5-425x425.jpg" alt="Ejercicio5" width="425" height="425" class="img-fluid ej5">
+                    </picture>
+                    <figcaption>ejercicio 5</figcaption>
+                </figure>
+            </article>
+            </div>
+        </section>
+        <section>
+            <div class="video">
+
+                <iframe class="videodestacado" src="https://www.youtube.com/embed/AlONzBd-nkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <section id="form">
+                <div class="container">
+            </section>
+            <header>
+                <h2>Enterate de nuestros planes de rutina.</h2>
+            </header>
+            <form action="enviar-consulta.php" method="post" enctype="application/x-www-form-urlencoded">
+                <!--label e imput su diseño base son de tipo inline-->
+                <div class="campos">
+                    <label for="nombres"> apellido y nombre*</label>
+                    <input type="text" name="nombres" id="nombres" placeholder="campo obligatorio" required>
+                </div>
+                <div class="campos">
+                    <label for="e-mail"> Mail*</label>
+                    <input type="text" name="e-mail" id="e-mail" placeholder="completar con e-mail válido" required>
+                </div>
+                <!--fin datos personales-->
+
+                <!--consultar-->
+                <div class="campos">
+                    <label for="mensaje"> consulta / mensaje </label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" maxlength="750" placeholder="Deja tu consulta o mensaje..."></textarea>
+                </div>
+                <button type="submit" value="enviar"> enviar</button>
+            </form>
+            </div>
+
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="container seguinos">
+            <h3 class="descripcion">Seguinos en</h3>
+            <figure class="RRSS">
+                <a href="#"><img src="img/iconos/whatsapp.png" alt="Logo whatsapp" width="50" height="50" title="Logo-RRSS" class="img-fluid"></a>
+                <a href="#"><img src="img/iconos/instagram.png" alt="Logo instagram" width="50" height="50" title="Logo-RRSS" class="img-fluid"></a>
+                <a href="#"><img src="img/iconos/youtube.png" alt="Logo youtube" width="50" height="50" title="Logo-RRSS" class="img-fluid">
+                    <a href="#"><img src="img/iconos/tik-tok.png" alt="Logo tik tok" width="50" height="50" title="Logo-RRSS" class="img-fluid" <img src="img/iconos/facebook.png" alt="Logo facebook" width="50" height="50" title="Logo-RRSS" class="img-fluid">
+                        <img src="img/iconos/twitter.png" alt="Logo twitter" width="50" height="50" title="Logo-RRSS" class="img-fluid">
+            </figure>
+        </div>
+    </footer>
+</body>
+<!--iconos fontawesome.com-->
+<script src="https://kit.fontawesome.com/2b64e18670.js" crossorigin="anonymous"></script>
+
+</html>
