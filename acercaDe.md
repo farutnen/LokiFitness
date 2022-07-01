@@ -1,2 +1,2 @@
 # LokiFitness
-Acá podrán ver todos los proyectos en los que fui haciendo.
+Acá podrán ver todos el proyecto que fui haciendo para un Gimnasio ficticio.
