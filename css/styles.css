@@ -1,13 +1,14 @@
 .loki-fitness {
     background-color: #252525;
     color: #fff;
-    padding: 3rem;
 }
 
 body {
     background-color: #ECBA3D;
 }
-
+p{
+    font-size: 0.75rem;
+}
 .pastillita {
     border-radius: 7%;
 }
@@ -24,6 +25,7 @@ body {
 
 a {
     text-decoration: none;
+    font-size: 0.75rem;
 }
 
 @media (min-width: 768px) {
