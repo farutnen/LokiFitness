@@ -1,252 +1,309 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP1 Nahuel Farut -- comisión B Turno Noche -- </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-
-    <link rel="stylesheet" href="./css/styles.css">
-
+    <!-- la roboto - google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700;900&display=swap" rel="stylesheet">
+
+    <title>🏋️‍♂️--Nahuel-Farut-comisión-B-Turno-Noche-2021--🔩</title>
 </head>
 
 <body>
-
-    <header id="encabezado">
-        <div class="container">
-            <!-- small navbar visto solo hasta 767px-->
-            <div class="navbar-sm">
-                <div>
-                    <!-- aplique flexbox -->
-                    <a href="#">
-                        <img class="logo-loki" src="img/logos/loki-fitness1.png" width="80px" height="80px" alt="logo-loki">
-                    </a>
-                    <!-- actúa target -->
-                    <h1>
-                        <a class="icono-h" href="#mi-menu">
-                            <i class="fas fa-bars fa-1x"></i>
-                        </a>
-                    </h1>
+    <!-- barra navegacion principal-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark focus-success ">
+        <div class="container-sm">
+            <!--logo en nav-->
+            <a href="#">
+                <img class="logo-loki" src="img/logos/loki-fitness1.png" width="80" height="80" alt="logo-loki">
+            </a>
+            <a class="navbar-brand" href="#loki-fitness"> Loki Fitness🏋️‍♂️</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#filosofia">filosofía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quienes-somos">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#videodestacado">Video destacado</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formulario-datos">contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--    CARROUSEL FAIL 
+    <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/carrousel/carrousel1.jpg" class="d-block w-100" alt="ubicación" width=1024 height=1440>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carrousel/carrousel2.jpg" class="d-block w-100" alt="máquinas" width=1024 height=1440>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carrousel/carrousel3.jpg" class="d-block w-100" alt="ejercicio" width=1024 height=1440>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Atrás</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>-->
+    <div class="container-fluid">
+        <div class="col-12">
+            <img src="img/Banner-1920x720.jpg" alt="Loki-Fitness" class="img-fluid" width="1920" height="720">
+        </div>
+    </div>
+    <section id="bg">
+        <div class="container-fluid loki-fitness">
+            <div class="text-center">
+                <div class="text-success">
+                    <h1>Bienvenidos a Loki Fitness</h1>
                 </div>
-                <nav id="mi-menu">
-                    <ul>
-                        <li><a href="index.html">inicio</a></li>
-                        <li><a href="#pastillas-filosofía">Glorioso Propósito</a></li>
-                        <li><a href="#quienes-somos">Sobre Nosotros</a></li>
-                        <li><a href="#">video destacado</a></li>
-                        <li><a href="#">galerías</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <!-- medium navbar 768px reaparece -->
-            <div class="navbar-md">
-                <img class="logo-loki" src="img/logos/loki-fitness2.png" width="80px" alt="logo-loki">
-                <nav>
-                    <ul class="menu">
-                        <li><a href="index.html">inicio</a></li>
-                        <li><a href="#pastillas-filosofía">filosofía</a></li>
-                        <li><a href="#quienes-somos">Sobre Nosotros</a></li>
-                        <li><a href="#">Video destacado</a></li>
-                        <li><a href="#">galerías</a></li>
-                    </ul>
-                </nav>
+                <article id="filosofia">
+                    <h2>Conceptos básicos para lograr <strong>el glorioso propósito.</strong></h2>
+                </article>
             </div>
         </div>
-    </header>
-    <div id="container-barra">
-    </div>
-    <div class="container-banner">
-        <figure class="banner">
-            <img src="img/Banner-1920x720.jpg" alt="Banner-1920x720" class="img-fluid" width="1920" height="720">
-        </figure>
-        <figure class="banner-loki">
-            <img src="img/logos/loki-fitness2.png" alt="Banner-loki-fitness2" class="img-fluid" width="320" height="594">
-        </figure>
-    </div>
+    </section>
 
-    <!-- fin banner -->
-    <!-- informa lo mas importante-->
-    <main>
+    <section id="pastillas-filo">
         <div class="container">
-            <header class="bienvenido">
-                <h1>Bienvenidos a Loki fitness</h1>
-            </header>
-        </div>
-        <div class="encabezado-pastilla">
-            <h1>Conceptos base para lograr <strong>el glorioso propósito</strong></h2>
-        </div>
-        <section id="pastillas-filo">
-            <div class="titulo-pastilla">
-                <h1>Conceptos base para lograr <strong>el glorioso propósito</strong></h2>
-            </div>
-
-
-            <article class="alimentacion">
-                <figure class="figure">
-                    <picture>
-                        <img src="img/iconos/salad.png" alt="ensalada" width="150" height="150" title="ensalada" class="img-fluid">
-                    </picture>
-                </figure>
-                <div>
-                    <h2 class="h2">Alimentación</h2>
-                    <p class="p">En nuestro local disponemos de un Salad bar para que puedas pedirte una variedad de alimentos para mantenerte sano, sentirte bien y tener energía. Estos nutrientes incluyen las proteínas, los carbohidratos, las grasas, el agua, las
+            <div class="row">
+                <!-- diseños de las columnas md lg xl xxl-->
+                <div class="mt-4 col-12 col-md-4 px-2 py-2 pt-4 col-lg-4 col-xl-4 col-xxl-4 text-center bg-success pastillita">
+                    <figure class="figure">
+                        <picture>
+                            <img src="img/iconos/salad.png" alt="ensalada" width="150" height="150" title="ensalada" class="img-fluid">
+                        </picture>
+                    </figure>
+                    <h2>Alimentación</h2>
+                    <p>En nuestro local disponemos de un Salad bar para que puedas pedirte una variedad de alimentos para mantenerte sano, sentirte bien y tener energía. Estos nutrientes incluyen las proteínas, los carbohidratos, las grasas, el agua, las
                         vitaminas y los minerales necesarios para tus necesidades.</p>
                 </div>
-            </article>
-            <article class="ejercicios">
-                <figure class="figure">
-                    <picture>
-                        <img src="img/iconos/gym.png" alt="24hs" width="150" height="150" title="24hs" class="img-fluid">
-                    </picture>
-                </figure>
-                <div>
-                    <h2 class="h2">Ejercicios a las 24hs.</h2>
-                    <p class="p">Nosotros disponemos del local abierto las 24Hs. para cuando tengas ganas de quemar calorías, lo puedas hacer a cualquier hora. Los ejercicios disponibles de 00Hs. a 06Hs. son el peso muerto, el press de banca, el press de hombros y
-                        la tracción.</p>
-                </div>
-            </article>
-            <article class="muscle">
-                <figure class="figure">
-                    <picture>
-                        <img src="img/iconos/muscle.png" alt="papelera" width="150" height="150" title="papelera" class="img-fluid">
-                    </picture>
-                </figure>
-                <div>
-                    <h2 class="h2">Perseverancia</h2>
-                    <p class="p">En Loki Fitness te ayudamos a tener firmeza, constancia y consistencia ante el cuerpo ideal. Nusotros hacemos del ejercicio una prioridad. Planeamos por vos una rutina de ejercicio, anotándola en tu agenda asignada y poniéndote recordatorios
-                    </p>
-                </div>
-            </article>
-        </section>
-        <section id="quienes-somos">
-
-            <article class="parr-img1">
-                <!-- padre de  5 tags-->
-                <div class="container parrafo1">
-
-                    <h3>Bienvenido, Midgardiano!</h3>
-                    <p>En loki Fitness nos une un objetivo: <strong>lograr nuestro glorioso propósito!</strong> Acá no toleramos que nos traten como corderitos sometidos, nosotros somos <strong>DIOSES</strong> de la musculatura!
-                    </p>
-                </div>
-                <figure>
-                    <picture>
-                        <img src="img/Movil-img1-425x425.jpg" alt="Ejercicio1" width="425" height="425" class="img-fluid ej1">
-                    </picture>
-                    <figcaption>ejercicio 1</figcaption>
-                </figure>
-            </article>
-            </div>
-            <article class="parr-img2">
-                <div class="container parrafo2">
-                    <h2>Acá no somos variantes, no...</h2>
-                    <p>Nos ponemos en forma desafiando a la verdad, no importa si sos flaco, gordo (como fat Thor), alto como un gigante de hielo o bajito como un enano de Nidavellir, acá somos todos iguales.
-                    </p>
-                </div>
-                <figure>
-                    <picture>
-                        <figure>
-                            <img src="img/Movil-img2-425x425.jpg" alt="Ejercicio2" width="425" height="425" class="img-fluid ej2">
-                    </picture>
-                    <figcaption>ejercicio2</figcaption>
+                <div class="mt-4 col-12 col-md-4 px-2 py-2 pt-4 col-lg-4 col-xl-4 col-xxl-4 text-center bg-success pastillita">
+                    <figure class="figure">
+                        <picture>
+                            <img src="img/iconos/gym.png" alt="24hs" width="150" height="150" title="24hs" class="img-fluid">
+                        </picture>
                     </figure>
-            </article>
-            </div>
-            <article class="parr-img3">
-                <div class="container parrafo3">
-                    <p>Nosotros no descansamos hasta lograr por nuestro propio mérito la figura escultural que uno desea, y no porque tenía que pasar de ese modo (o porque la autoridad de variación temporal dejaron que pasara). Nuestras deciciones son...
-                        <strong>Nuestras!</strong>
+                    <h2>Ejercicios a las 24Hs.</h2>
+                    <p>Nosotros disponemos del local abierto las 24Hs. para cuando tengas ganas de quemar calorías, lo puedas hacer a cualquier hora. Los ejercicios disponibles de 00Hs. a 06Hs. son el peso muerto, el press de banca, el press de hombros y
+                        la tracción.
                     </p>
                 </div>
-                <figure>
-                    <picture>
-                        <img src="img/Movil-img3-425x425.jpg" alt="Ejercicio3" width="425" height="425" class="img-fluid ej3">
-                    </picture>
-                    <figcaption>ejercicio 3</figcaption>
-                </figure>
-            </article>
-            </div>
-            <article class="parr-img4">
-                <div class="container parrafo4">
-                    <p>No hay oportunidad para el fracaso. perdemos a veces, si... dolorosamente también, pero nunca dejamos que muera nuestra voluntad de poder!
+                <div class="mt-4 col-12 col-md-4 px-2 py-2 pt-4 col-lg-4 col-xl-4 col-xxl-4 text-center bg-success pastillita">
+                    <figure class="figure aling-center">
+                        <picture>
+                            <img src="img/iconos/muscle.png" alt="Musculos" width="150" height="150" title="papelera" class="img-fluid">
+                        </picture>
+                    </figure>
+                    <h2>Perseverancia</h2>
+                    <p>En Loki Fitness te ayudamos a tener firmeza, constancia y consistencia ante el cuerpo ideal. Nusotros hacemos del ejercicio una prioridad. Planeamos por vos una rutina de ejercicio, anotándola en tu agenda asignada y poniéndote recordatorios
                     </p>
                 </div>
-                <figure>
-                    <picture>
-                        <img src="img/Movil-img4-425x425.jpg" alt="Ejercicio4" width="425" height="425" class="img-fluid ej4">
-                    </picture>
-                    <figcaption>ejercicio 4</figcaption>
-                </figure>
-            </article>
             </div>
-            <article class="parr-img5">
-                <div class="container parrafo5">
-                    <p>No hay oportunidad para el fracaso. perdemos a veces, si... dolorosamente también, pero nunca dejamos que muera nuestra voluntad de poder!Así que dejen de estar de rodillas como simples Midgardianos! levántesen, vengan a Loki Fitness
-                        para estar en buena forma como todo Asgardiano, y darle una paliza a cualquier Hulk que los quiera azotar contra el piso como si fuera un trapo!
+        </div>
+    </section>
+    <section id="quienes-somos">
+        <div class="container">
+            <h2>Bienvenido, Midgardiano!</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-8 col-xl-4 col-xxl-4 radius-1 center">
+                    <h3>En loki Fitness nos une un objetivo:</h3>
+                    <p><strong>lograr nuestro glorioso propósito!</strong> Acá no toleramos que nos traten como corderitos sometidos, nosotros somos <strong>DIOSES</strong> de la musculatura! Si querés estar en forma, Loki Fitness es tu solución.
                     </p>
                 </div>
-                <figure>
-                    <picture>
-                        <img src="img/Movil-img5-425x425.jpg" alt="Ejercicio5" width="425" height="425" class="img-fluid ej5">
-                    </picture>
-                    <figcaption>ejercicio 5</figcaption>
-                </figure>
-            </article>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-2 col-xxl-2">
+                    <img src="img/IMG1-450X450.jpg" alt="ejercicio-1" width="768" height="768" class="img-fluid img-circle" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-8 col-xl-4 col-xxl-4 ">
+                    <h3>Acá no somos variantes, no...</h3>
+                    <p>Nos ponemos en forma desafiando a la verdad, no importa si sos flaco, gordo <strong>(como fat Thor)</strong>, alto como un gigante de hielo o bajito como un enano de Nidavellir, acá somos todos iguales.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-2 col-xxl-2">
+                    <img src="img/IMG2-450X450.jpg" alt="ejercicio-2" width="768" height="768" class="img-fluid img-circle" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-8 col-xl-4 col-xxl-4 ">
+                    <h3>Si querés verte y sentirte mejor:</h3>
+                    <p>Loki Fitness es tu mejor opción! Loki Fitness tiene una filosofía basada en <strong>la constancia, la disciplina y la dedicación.</strong> Nosotros te ayudamos a establecer una rutina de ejercicio que se ajuste a tus necesidades y
+                        a tu estilo de vida. Nosotros te motivamos a seguir adelante, sin importar las dificultades. En <strong>Loki Fitness</strong> te ayudamos a cumplir tus objetivos y a alcanzar el cuerpo que siempre soñaste.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-2 col-xxl-2">
+                    <img src="img/IMG3-450X450.jpg" alt="cafe-3-768" width="768" height="768" class="img-fluid img-circle">
+                </div>
+                <div class="col-12 col-md-6 col-lg-8 col-xl-4 col-xxl-4 ">
+                    <h3>Dueños de nuestras deciciones:</h3>
+                    <p>Nuestro objetivo es sepas que el ejercicio es una parte importante de tu vida y que no puedes dejar de hacerlo. Por eso, te damos un <strong>plan de ejercicio semanal</strong>, que incluye rutinas de acondicionamiento <strong>físico, cardio y fuerza.</strong>                        Así, podés elegir el que más se adapte a tus necesidades y a tu estilo de vida. <strong>Loki Fitness</strong> es tu solución. ¡Contá con nosotros!
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-2 col-xxl-2">
+                    <img src="img/IMG4-450X450.jpg" alt="cafe-1-768" width="768" height="768" class="img-fluid img-circle" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-8 col-xl-4 col-xxl-4 ">
+                    <h3>No hay oportunidad para el fracaso.</h3>
+                    <p>
+                        Perderémos las ganas a veces, si... quedarémos adoloridos, también, pero nunca dejaremos que muera nuestra voluntad de poder seguir! Así que dejen de estar de rodillas como simples Midgardianos! levántesen, vengan a Loki Fitness para estar en buena forma
+                        como todo Asgardiano, y darle una paliza a cualquier Hulk que los quiera azotar contra el piso como si fuera un trapo!
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-2 col-xxl-2">
+                    <img src="img/IMG5-450X450.jpg" alt="cafe-5-768" width="768" height="768" class="img-fluid img-circle" />
+                </div>
             </div>
-        </section>
-        <section>
-            <div class="video">
-
+        </div>
+    </section id="video-destacado">
+    <div class="container">
+        <div class="row">
+            <div class="col video">
                 <iframe class="videodestacado" src="https://www.youtube.com/embed/AlONzBd-nkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <section id="form">
-                <div class="container">
-            </section>
-            <header>
-                <h2>Enterate de nuestros planes de rutina.</h2>
-            </header>
-            <form action="enviar-consulta.php" method="post" enctype="application/x-www-form-urlencoded">
-                <!--label e imput su diseño base son de tipo inline-->
-                <div class="campos">
-                    <label for="nombres"> apellido y nombre*</label>
-                    <input type="text" name="nombres" id="nombres" placeholder="campo obligatorio" required>
-                </div>
-                <div class="campos">
-                    <label for="e-mail"> Mail*</label>
-                    <input type="text" name="e-mail" id="e-mail" placeholder="completar con e-mail válido" required>
-                </div>
-                <!--fin datos personales-->
-
-                <!--consultar-->
-                <div class="campos">
-                    <label for="mensaje"> consulta / mensaje </label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" maxlength="750" placeholder="Deja tu consulta o mensaje..."></textarea>
-                </div>
-                <button type="submit" value="enviar"> enviar</button>
-            </form>
-            </div>
-
-        </section>
-    </main>
-    <footer id="footer">
-        <div class="container seguinos">
-            <h3 class="descripcion">Seguinos en</h3>
-            <figure class="RRSS">
-                <a href="#"><img src="img/iconos/whatsapp.png" alt="Logo whatsapp" width="50" height="50" title="Logo-RRSS" class="img-fluid"></a>
-                <a href="#"><img src="img/iconos/instagram.png" alt="Logo instagram" width="50" height="50" title="Logo-RRSS" class="img-fluid"></a>
-                <a href="#"><img src="img/iconos/youtube.png" alt="Logo youtube" width="50" height="50" title="Logo-RRSS" class="img-fluid">
-                    <a href="#"><img src="img/iconos/tik-tok.png" alt="Logo tik tok" width="50" height="50" title="Logo-RRSS" class="img-fluid" <img src="img/iconos/facebook.png" alt="Logo facebook" width="50" height="50" title="Logo-RRSS" class="img-fluid">
-                        <img src="img/iconos/twitter.png" alt="Logo twitter" width="50" height="50" title="Logo-RRSS" class="img-fluid">
-            </figure>
         </div>
-    </footer>
-</body>
-<!--iconos fontawesome.com-->
-<script src="https://kit.fontawesome.com/2b64e18670.js" crossorigin="anonymous"></script>
+    </div>
+    <div id="formulario-datos">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="p-0 bg-success bg-opacity-75">
+                            <h2 class="display-5 text-center pt-2fondo-h2-titulo">Enterate de nuestros planes de rutina.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action method="post" class="row pb-5 bg-success bg-opacity-75">
+                <div class="col-10 mx-auto my-2">
+                    <form class="form-inscripcion" novalidate action="enviar-consulta.php" method="post" enctype="application/x-www-form-urlencoded">
+                        <label for="validationTooltip01">Nombre</label>
+                        <input type="text" class="form-control" id="validationTooltip01" value="Jorge" required>
+                        <div class="valid-tooltip">
+                            Campo permitido!
+                        </div>
+                        <div class="col-10 mx-auto my-2">
+                            <label for="validationTooltip02">Apellido</label>
+                            <input type="text" class="form-control" id="validationTooltip02" value="Samuelle" required>
+                            <div class="valid-tooltip">
+                                Campo permitido!
+                            </div>
+                        </div>
+                        <div class="col-10 mx-auto my-2">
+                            <label for="validationTooltipUsername">Nombre de Usuario/Nick</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                                </div>
+                                <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                                <div class="invalid-tooltip">
+                                    Elija un nombre de usuario válido.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-10 mx-auto my-2">
+                            <label for="validationTooltip03">Ciudad</label>
+                            <input type="text" class="form-control" id="validationTooltip03" required>
+                            <div class="invalid-tooltip">
+                                Ingrese una Localidad válida.
+                            </div>
+                        </div>
+                        <div class="col-10 mx-auto my-2">
+                            <label for="validationTooltip04">Partido </label>
+                            <select class="custom-select" id="validationTooltip04" required>
+                                <option selected disabled>--- Ingrese una ciudad ---</option>
+                                <option value="Ciudad Autónoma de Buenos Aires">Ciudad Autónoma de Buenos Aires</option>
+                                <option value="Almirante Brown">    Almirante Brown</option>
+                                <option value="Avellaneda">         Avellaneda</option>
+                                <option value="Berazategui">        Berazategui</option>
+                                <option value="Esteban Echeverría"> Esteban Echeverría</option>
+                                <option value="Ezeiza">             Ezeiza</option>
+                                <option value="Florencio Varela">   Florencio Varela</option>
+                                <option value="General San Martín"> General San Martín</option>
+                                <option value="Hurlingham">         Hurlingham</option>
+                                <option value="Ituzaingó">          Ituzaingó</option>
+                                <option value="José C. Paz">        José C. Paz</option>
+                                <option value="La Matanza">         La Matanza</option>
+                                <option value="Lanús">              Lanús</option>
+                                <option value="Lomas de Zamora">    Lomas de Zamora</option>
+                                <option value="Malvinas Argentinas">Malvinas Argentinas</option>
+                                <option value="Merlo">              Merlo</option>
+                                <option value="Moreno">             Moreno</option>
+                                <option value="Morón">              Morón</option>
+                                <option value="Quílmes">            Quílmes</option>
+                                <option value="San Fernando">       San Fernando</option>
+                                <option value="San Isidro">         San Isidro</option>
+                                <option value="">San Miguel</option>
+                                <option value="">Tigre</option>
+                                <option value="">Tres de Febrero</option>
+                                <option value=">Vicente López">Vicente López</option>
+                                </select>
+                            <div class="invalid-tooltip">
+                                Ingrese un campo válido.
+                            </div>
+                        </div>
+                        <label for="consulta" class="form-label fs-5 text-white">Consulta</label>
+                        <textarea class="form-control" rows="10" placeholder="Dejanos tu consulta aquí" aria-describedby="maximos-caracteres" maxlength="480"></textarea>
+                        <div id="maximos-caracteres" class="form-text text-white">Máxima cantidad de caracteres 480</div>
+                        <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                        <button type="reset" class="btn btn-danger mt-3">Borrar</button>
+                        <!--fin datos personales-->
+                        <!--consultar-->
+                        <div class="campos">
+                        </div>
+                    </form>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
+<div style="text-align:right;position:fixed;z-index:9999999;bottom:0;width:auto;right:1%;cursor:pointer;line-height:0;display:block!important"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div><script>function getCookie(t){for(var e=t+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(e))return i.substring(e.length,i.length)}return""}getCookie("hostinger")&&(document.cookie="hostinger=;expires=Thu, 01 Jan 1970 00:00:01 GMT;",location.reload());var wordpressAdminBody=document.getElementsByClassName("wp-admin")[0],notification=document.getElementsByClassName("notice notice-success is-dismissible"),hostingerLogo=document.getElementsByClassName("hlogo"),mainContent=document.getElementsByClassName("notice_content")[0];if(null!=wordpressAdminBody&&0<notification.length&&null!=mainContent){var googleFont=document.createElement("link");googleFontHref=document.createAttribute("href"),googleFontRel=document.createAttribute("rel"),googleFontHref.value="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700",googleFontRel.value="stylesheet",googleFont.setAttributeNode(googleFontHref),googleFont.setAttributeNode(googleFontRel);var css="@media only screen and (max-width: 576px) {#main_content {max-width: 320px !important;} #main_content h1 {font-size: 30px !important;} #main_content h2 {font-size: 40px !important; margin: 20px 0 !important;} #main_content p {font-size: 14px !important;} #main_content .content-wrapper {text-align: center !important;}} @media only screen and (max-width: 781px) {#main_content {margin: auto; justify-content: center; max-width: 445px;}} @media only screen and (max-width: 1325px) {.web-hosting-90-off-image-wrapper {position: absolute; max-width: 95% !important;} .notice_content {justify-content: center;} .web-hosting-90-off-image {opacity: 1;}} @media only screen and (min-width: 769px) {.notice_content {justify-content: space-between;} #main_content {margin-left: 5%; max-width: 445px;} .web-hosting-90-off-image-wrapper {position: absolute; display: flex; justify-content: center; width: 50%; margin-left: 45%;}} .web-hosting-90-off-image {max-width: 90%;} .content-wrapper {min-height: 454px; display: flex; flex-direction: column; justify-content: center; z-index: 5} .notice_content {display: flex; align-items: center;} * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} .upgrade_button_red_sale{box-shadow: 0 2px 4px 0 rgba(255, 69, 70, 0.2); width: 264px; border: 0; border-radius: 3px; background-color: #FF5C62 !important; padding: 15px 55px !important; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 600; color: #ffffff;} .upgrade_button_red_sale:hover{color: #ffffff !important; background: #d10303 !important;}",style=document.createElement("style"),sheet=window.document.styleSheets[0];style.styleSheet?style.styleSheet.cssText=css:style.appendChild(document.createTextNode(css)),document.getElementsByTagName("head")[0].appendChild(style),document.getElementsByTagName("head")[0].appendChild(googleFont);var button=document.getElementsByClassName("upgrade_button_red")[0],link=button.parentElement;link.setAttribute("href","https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&utm_medium=panel&utm_campaign=000-wp"),link.innerHTML='<button class="upgrade_button_red_sale">Claim Deal</button>',(notification=notification[0]).setAttribute("style","padding-bottom: 0; padding-top: 5px; background-color: #040713; background-size: cover; background-repeat: no-repeat; color: #ffffff; border-left-color: #040713;"),notification.className="notice notice-error is-dismissible";var mainContentHolder=document.getElementById("main_content");mainContentHolder.setAttribute("style","padding: 0;"),hostingerLogo[0].remove();var h1Tag=notification.getElementsByTagName("H1")[0];h1Tag.className="000-h1",h1Tag.innerHTML="Black Friday",h1Tag.setAttribute("style",'color: white; font-family: "Roboto", sans-serif; font-size: 48px; font-weight: 700;');var h2Tag=document.createElement("H2");h2Tag.innerHTML="Up to 90% off 4-year hosting plans + free domain, SSL & DDoS protection",h2Tag.setAttribute("style",'color: white; margin: 10px 0 15px 0; font-family: "Roboto", sans-serif; font-size: 16px; font-weight: 400; line-height: 1;'),h1Tag.parentNode.insertBefore(h2Tag,h1Tag.nextSibling);var paragraph=notification.getElementsByTagName("p")[0];paragraph.innerHTML="$<span style='font-size: 80px;'>2.49</span>/mo",paragraph.setAttribute("style",'font-family: "Roboto", sans-serif; font-size: 48px; font-weight: 700; margin: 0;');var list=notification.getElementsByTagName("UL")[0];list.remove();var org_html=mainContent.innerHTML,new_html='<div class="content-wrapper">'+mainContent.innerHTML+'</div><div class="web-hosting-90-off-image-wrapper"><img class="web-hosting-90-off-image" src="https://cdn.000webhost.com/000webhost/promotions/bf-2022-bottom-banner.png"></div>';mainContent.innerHTML=new_html;var saleImage=mainContent.getElementsByClassName("web-hosting-90-off-image")[0]}</script></body>
+<footer class="text-center bg-dark text-light">
+    <div class="container">
+        <div class="row">
+            <div class="text-center loki-fitness">
+                <p>-copyrigth: <a href=”mailto:nahuel.farut@davinci.edu.ar”> Nahuel Farut - DMTN - comisión B - 2021 - Da Vinci</a></p>
+            </div>
+            <div class="col mx-auto text-center">
+                <a href="https://es-la.facebook.com/" target="new"><img src="img/iconos/facebook.png" height="30" width="30" alt="facebook"></a>
+                <a href="https://www.instagram.com/" target="new"><img src="img/iconos/instagram.png" height="30" width="30" alt="instagram"></a>
+                <a href="https://twitter.com/" target="new"><img src="img/iconos/twitter.png" height="30" width="30" alt="twitter"></a>
+                <a href="https://tiktok.com/" target="new"><img src="img/iconos/tik-tok.png" height="30" width="30" alt="tiktok"></a>
+                <a href="https://www.whatsapp.com/" target="new"><img src="img/iconos/whatsapp.png" height="30" width="30" alt="whatsapp"></a>
+                <a href="https://www.youtube.com/" target="new"><img src="img/iconos/youtube.png" height="30" width="30" alt="youtube"></a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </html>
