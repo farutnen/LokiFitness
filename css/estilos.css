@@ -1,0 +1,59 @@
+.loki-fitness {
+    background-color: #252525;
+    color: #fff;
+    padding: 3rem;
+}
+
+body {
+    background-color: #ECBA3D;
+}
+
+.pastillita {
+    border-radius: 7%;
+}
+
+.row {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.img-circle {
+    border-radius: 50%;
+    padding-bottom: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .pastillita {
+        border-radius: 0%;
+    }
+    .figure {
+        background-color: #252525;
+    }
+    .container {
+        color: black;
+    }
+}
+
+#pastillas-filo {
+    background-color: #ECBA3D;
+}
+
+#quienes-somos {
+    padding-top: 3rem;
+}
+
+#video-destacado {
+    text-align: center;
+}
+
+#formulario-datos {
+    background-color: #ECBA3D;
+}
+
+.fondo-h2-titulo {
+    border-radius: 15%
+}
